@@ -32,9 +32,9 @@ So, timer gets incremented after 0.125 us time elapse.
 
                  = (TIMER value) / 466.47 cm
 
-2_Design
+Circuit
 --------
-![circuit diagram](2_Design/circuit diagram.png)
+![ultrasonic](circuit/ultrasonic.PNG)
 
 Installation
 ------------
