@@ -32,10 +32,6 @@ So, timer gets incremented after 0.125 us time elapse.
 
                  = (TIMER value) / 466.47 cm
 
-Circuit
---------
-![ultrasonic](Design/circuitdiagram.png)
-
 Installation
 ------------
 You will need to have the AVR toolchain installed on your system. This includes:
