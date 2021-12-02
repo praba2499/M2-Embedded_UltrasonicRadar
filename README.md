@@ -45,3 +45,6 @@ You will need to have the AVR toolchain installed on your system. This includes:
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1fdaea3601294141986a528b28a874e5)](https://www.codacy.com/gh/praba2499/M2-Embedded_UltrasonicRadar/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=praba2499/M2-Embedded_UltrasonicRadar&amp;utm_campaign=Badge_Grade)
 
+[![Codacy Badge](https://api.codiga.io/project/30313/score/svg)](https://app.codiga.io/public/project/30313/M2-Embedded_UltrasonicRadar/dashboard)
+[![Codacy Badge](https://api.codiga.io/project/30313/status/svg)](https://app.codiga.io/public/project/30313/M2-Embedded_UltrasonicRadar/dashboard)
+
