@@ -7,7 +7,7 @@ Interfacing an ultrasonic sensor to measure the distance to objects in(cm) and d
 
 Hardware
 --------
-* AVR ATmega328 microcontroller.
+* AVR ATmega32 microcontroller.
 * Uspasp programmer
 * Ultrasonic sensor (HC-SR04)
 * 2x16 LCD
@@ -23,7 +23,7 @@ Distance of Object (in cm)
 
                         = 17150  * Timer Value
 
-we have selected internal 8 MHz oscillator frequency for ATmega328, with No-presale for timer frequency. Then time to execute 1 instruction is 0.125 us
+we have selected internal 8 MHz oscillator frequency for ATmega32, with No-presale for timer frequency. Then time to execute 1 instruction is 0.125 us
 So, timer gets incremented after 0.125 us time elapse.
 
                  = 17150 x (TIMER value) x 0.125 x 10^-6 cm
@@ -32,6 +32,10 @@ So, timer gets incremented after 0.125 us time elapse.
 
                  = (TIMER value) / 466.47 cm
 
+Circuit
+--------
+![ultrasonic](circuit/ultrasonic.PNG)
+
 Installation
 ------------
 You will need to have the AVR toolchain installed on your system. This includes:
@@ -39,4 +43,7 @@ You will need to have the AVR toolchain installed on your system. This includes:
 * avr-libc
 * avrdude
 
+Support
+------
+Please feel free to contact me if you have any questions/concerns. My email address is hossamelbahrawy52@gmail.com
 
