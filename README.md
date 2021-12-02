@@ -1,29 +1,49 @@
-# Ultrasonic-Sensor-Driver
-Bare metal code (library) to interface an Atmega328p with an HCSR04 ultrasonic sensor
+Ultrasonic sensor
+================
 
-Components:
-1. Atmega328 micrcontroller
-2. HCSR04 ultrasonic sensor
-3. 4 connectors
+Introduction
+------------
+Interfacing an ultrasonic sensor to measure the distance to objects in(cm) and displaying the distance on 2x16 LCD using ATmega32 with the AVR toolchain.
 
-Connections:
-1. Vcc pin of sensor to 5v
-2. Gnd pin of sensor to Gnd
-3. Trig pin of sensor to PD6 of Atmega328p or Pin 6 of Uno
-4. Echo pin of sensor to PB0 of Atmega328p or Pin 8 of Uno
+Hardware
+--------
+* AVR ATmega32 microcontroller.
+* Uspasp programmer
+* Ultrasonic sensor (HC-SR04)
+* 2x16 LCD
 
-Working:
-The library uses Timer 0 and Timer 1 of the Atmega328p. Timer 0 is used to generate PWM signals on PD6 to trigger the sensor. The echo pulse then generates a pulse whose width is measured by the Input Capture feature of Timer 1.
+Distance Calculation
+--------
+Sound velocity =   343.00 m/s = 34300 cm/s
 
-How to use the library:
-See Example.c
+Distance of Object (in cm)
+                        = (Sound velocity * TIMER Value) / 2
 
-Library functions:
-1. void HCSR04_Init(void) :: This initializes the ultrasonic sensor
-2. uint32_t getDistance(void) :: This returns the distance measured
+                        = (34300 * TIMER Value) / 2
 
-Additional information can be found in the datasheets of the Atmega328p and the HCSR04.
+                        = 17150  * Timer Value
 
-Suggestions for improving the codes will be greatly appreciated
+we have selected internal 8 MHz oscillator frequency for ATmega32, with No-presale for timer frequency. Then time to execute 1 instruction is 0.125 us
+So, timer gets incremented after 0.125 us time elapse.
 
+                 = 17150 x (TIMER value) x 0.125 x 10^-6 cm
+
+                 = 0.125 x (TIMER value)/58.30 cm
+
+                 = (TIMER value) / 466.47 cm
+
+Circuit
+--------
+![ultrasonic](circuit/ultrasonic.PNG)
+
+Installation
+------------
+You will need to have the AVR toolchain installed on your system. This includes:
+* avr-gcc
+* avr-libc
+* avrdude
+
+Support
+------
+Please feel free to contact me if you have any questions/concerns. My email address is hossamelbahrawy52@gmail.com
 
