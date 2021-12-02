@@ -2,7 +2,7 @@
 Bare metal code (library) to interface an Atmega328p with an HCSR04 ultrasonic sensor
 
 Components:
-1. Atmega328p micrcontroller (or an Arduino Uno)
+1. Atmega328 micrcontroller
 2. HCSR04 ultrasonic sensor
 3. 4 connectors
 
