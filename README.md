@@ -34,7 +34,7 @@ So, timer gets incremented after 0.125 us time elapse.
 
 Circuit
 --------
-![ultrasonic](circuit/ultrasonic.PNG)
+![ultrasonic](2_Design/circuit diagram.png)
 
 Installation
 ------------
