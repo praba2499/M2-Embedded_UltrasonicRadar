@@ -3,6 +3,8 @@
 [![Codacy Badge](https://api.codiga.io/project/30313/status/svg)](https://app.codiga.io/public/project/30313/M2-Embedded_UltrasonicRadar/dashboard)
 [![Codacy Badge](https://api.codiga.io/project/30313/score/svg)](https://app.codiga.io/public/project/30313/M2-Embedded_UltrasonicRadar/dashboard)
 
+[![Code Quality - Static Code - Cppcheck](https://github.com/praba2499/M2-Embedded_UltrasonicRadar/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/praba2499/M2-Embedded_UltrasonicRadar/actions/workflows/c-cpp.yml)
+
 
 
 
